@@ -14,7 +14,6 @@ class MoodEntryPage extends StatefulWidget {
 
 class _MoodEntryPageState extends State<MoodEntryPage> {
   Future<List<MoodEntry>> fetchMood(CookieRequest request) async {
-    // TODO: Don't forget to add the trailing slash (/) at the end of the URL!
     final response = await request.get('http://127.0.0.1:8000/json/');
 
     // Decoding the response into JSON
